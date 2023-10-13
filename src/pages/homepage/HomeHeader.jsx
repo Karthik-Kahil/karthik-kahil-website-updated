@@ -5,7 +5,6 @@ import SubText from "../../ui/SubText";
 const HomeHead = styled.div`
   padding-top: 20rem;
   background: var(--baackground--gradient);
-  background-color: var(--baackground--gradient);
 
   & div {
     padding-top: 5rem;
