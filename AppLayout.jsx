@@ -1,12 +1,19 @@
 import { Outlet } from "react-router-dom";
 import NavBar from "./src/features/navbar/NavBar";
+import styled from "styled-components";
+
+const AppStyled = styled.div`
+  background-color: var(--color-primary);
+`;
 
 function AppLayout() {
   return (
-    <>
+    <AppStyled>
       <NavBar />
-      <Outlet />
-    </>
+      <main>
+        <Outlet />
+      </main>
+    </AppStyled>
   );
 }
 

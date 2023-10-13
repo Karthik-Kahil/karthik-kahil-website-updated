@@ -87,7 +87,7 @@ const navLinks = [
   {
     name: "About",
     width: "w-80",
-    transition: { left: "101px", width: "80px" },
+    transition: { left: "102px", width: "80px" },
     to: "/about",
   },
   {
