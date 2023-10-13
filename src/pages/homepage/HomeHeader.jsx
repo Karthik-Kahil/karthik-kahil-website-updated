@@ -6,6 +6,11 @@ const HomeHead = styled.div`
   padding-top: 20rem;
   background: var(--baackground--gradient);
   background-color: var(--baackground--gradient);
+
+  & div {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
 `;
 
 function HomeHeader() {
