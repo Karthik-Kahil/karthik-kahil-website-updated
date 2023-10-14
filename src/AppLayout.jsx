@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import NavBar from "./src/features/navbar/NavBar";
+import NavBar from "./features/navbar/NavBar";
 import styled from "styled-components";
 
 const AppStyled = styled.div`

@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Header from "../../ui/Header";
 import SubText from "../../ui/SubText";
 import HomeHeader from "./HomeHeader";
+import Gridsection from "../../ui/Gridsection";
 
 const StyledHome = styled.div`
   /* & div {
@@ -14,6 +15,7 @@ function Homepage() {
   return (
     <StyledHome>
       <HomeHeader />
+      <Gridsection />
     </StyledHome>
   );
 }
