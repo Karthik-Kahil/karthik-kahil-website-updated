@@ -51,9 +51,9 @@ const StyledSection = styled.div`
   }
 `;
 
-function Gridsection({ subText, header, imageUrl, imgFull }) {
+function Gridsection({ subText, header, imageUrl, bgColors, imgFull }) {
   return (
-    <StyledSection>
+    <StyledSection bgColors={bgColors} imgFull={imgFull}>
       <p>{subText}</p>
       <h2>{header}</h2>
       <div>
