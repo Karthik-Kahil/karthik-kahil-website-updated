@@ -8,6 +8,7 @@ const Nav = styled.nav`
   display: flex;
   justify-content: center;
   margin-top: 2rem;
+  z-index: 999;
 `;
 
 const Div = styled.div`
@@ -82,30 +83,35 @@ const navLinks = [
     width: "w-90",
     transition: { left: "4px", width: "90px" },
     to: "/",
+    active: false,
   },
   {
     name: "About",
     width: "w-80",
     transition: { left: "102px", width: "80px" },
     to: "/about",
+    active: false,
   },
   {
     name: "Play",
     width: "w-70",
     transition: { left: "189px", width: "72px" },
     to: "/play",
+    active: false,
   },
   {
     name: "Notes",
     width: "w-100",
     transition: { left: "267px", width: "103px" },
     to: "/notes",
+    active: false,
   },
   {
     name: "Contact",
     width: "w-110",
     transition: { left: "375px", width: "113px" },
     to: "/contact",
+    active: false,
   },
 ];
 

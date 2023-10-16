@@ -88,6 +88,12 @@ select:focus {
   outline-offset: -1px;
 }
 
+
+body {
+  background-color: var(--color-primary);
+}
+
+
 /* Parent selector, finally 😃 */
 button:has(svg) {
   line-height: 0;

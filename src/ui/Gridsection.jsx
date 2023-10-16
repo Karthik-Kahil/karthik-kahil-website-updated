@@ -1,22 +1,25 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
-const GridContainer = styled.div`
-  display: grid;
-  grid-template-columns: 0.6fr 1fr;
-  grid-template-rows: 45rem;
-  grid-gap: 5rem;
-  padding: 10rem 2% 0 2%;
-  max-width: 1400px;
-  margin: 0 auto;
-  text-align: right;
-`;
-
-const GridSection = styled.div`
-  background-color: var(--color-secondary-a0);
+const StyledSection = styled.div`
+  background-color: ${(props) => props.bgColors};
   padding: 5rem;
   border-radius: 50px;
   position: relative;
   overflow: hidden;
+  transition: all 0.5s ease;
+  cursor: pointer;
+
+  &:hover {
+    img {
+      transform: translateY(20px);
+      transition: all 0.5s ease;
+    }
+    transform: translateY(-10px);
+
+    -webkit-box-shadow: 0px 0px 40px 4px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 40px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 40px 4px rgba(0, 0, 0, 0.1);
+  }
 
   & p {
     font-family: "Poppins", sans-serif;
@@ -31,7 +34,11 @@ const GridSection = styled.div`
   }
 
   & div {
-    position: absolute;
+    ${(props) =>
+      props.imgFull ||
+      css`
+        position: absolute;
+      `}
     right: -55rem;
     left: 5rem;
     margin-top: 4rem;
@@ -40,30 +47,19 @@ const GridSection = styled.div`
 
   & div img {
     width: 100%;
+    transition: all 0.5s ease;
   }
 `;
 
-function Gridsection() {
+function Gridsection({ subText, header, imageUrl, imgFull }) {
   return (
-    <GridContainer>
-      <GridSection>
-        <p>HELP SCOUT</p>
-        <h2>AI</h2>
-        <div>
-          <img src="https://www.seanhalpin.xyz/work/ai/ai-hero@2x.png" alt="" />
-        </div>
-      </GridSection>
-      <GridSection>
-        <p>HELP SCOUT</p>
-        <h2>Ariticles</h2>
-        <div>
-          <img
-            src="https://www.seanhalpin.xyz/work/docs/docs-hero@2x.png"
-            alt=""
-          />
-        </div>
-      </GridSection>
-    </GridContainer>
+    <StyledSection>
+      <p>{subText}</p>
+      <h2>{header}</h2>
+      <div>
+        <img src={imageUrl} alt={subText} />
+      </div>
+    </StyledSection>
   );
 }
 
