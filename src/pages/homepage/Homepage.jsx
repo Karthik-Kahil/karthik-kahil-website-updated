@@ -13,27 +13,27 @@ const StyledHome = styled.div`
 function Homepage() {
   return (
     <StyledHome>
-      <HomeHeader color={"gradient"} />
-      <GridContainer gridView="left-sm">
+      <HomeHeader color={"gradient"} padtop={"20rem"} />
+      <GridContainer gridview="left-sm">
         <Gridsection
           subText={"HELP SCOUT"}
           header={"AI"}
           imageUrl={"https://www.seanhalpin.xyz/work/ai/ai-hero@2x.png"}
-          bgColors={"var(--color-secondary-a0)"}
+          bgcolors={"var(--color-secondary-a0)"}
         />
         <Gridsection
           subText={"HELP SCOUT"}
           header={"Ariticles"}
           imageUrl={"https://www.seanhalpin.xyz/work/docs/docs-hero@2x.png"}
-          bgColors={"var(--color-secondary-a1)"}
+          bgcolors={"var(--color-secondary-a1)"}
         />
       </GridContainer>
-      <GridContainer gridView="right-sm">
+      <GridContainer gridview="right-sm">
         <Gridsection
           subText={"HELP SCOUT"}
           header={"AI"}
           imageUrl={"https://www.seanhalpin.xyz/work/ai/ai-hero@2x.png"}
-          bgColors={"var(--color-secondary-a2)"}
+          bgcolors={"var(--color-secondary-a2)"}
         />
         <Gridsection
           subText={"HELP SCOUT"}
@@ -41,12 +41,12 @@ function Homepage() {
           imageUrl={
             "https://www.seanhalpin.xyz/work/mobile/mobile-header_03.png"
           }
-          imgFull={true}
-          bgColors={"var(--color-secondary-a3)"}
+          imgfull={"imgfull"}
+          bgcolors={"var(--color-secondary-a3)"}
         />
       </GridContainer>
       <HomeHeader
-        padTop={"10rem"}
+        padtop={"10rem"}
         color={"solid"}
         header={"In Progress."}
         subText={

@@ -3,13 +3,13 @@ import styled, { css } from "styled-components";
 const GridContainer = styled.div`
   display: grid;
   ${(props) =>
-    props.gridView === "left-sm" &&
+    props.gridview === "left-sm" &&
     css`
       grid-template-columns: 0.6fr 1fr;
     `}
 
   ${(props) =>
-    props.gridView === "right-sm" &&
+    props.gridview === "right-sm" &&
     css`
       grid-template-columns: 1fr 0.6fr;
     `}

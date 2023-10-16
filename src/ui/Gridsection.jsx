@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 
 const StyledSection = styled.div`
-  background-color: ${(props) => props.bgColors};
+  background-color: ${(props) => props.bgcolors};
   padding: 5rem;
   border-radius: 50px;
   position: relative;
@@ -35,7 +35,7 @@ const StyledSection = styled.div`
 
   & div {
     ${(props) =>
-      props.imgFull ||
+      props?.imgfull ||
       css`
         position: absolute;
       `}
@@ -51,9 +51,9 @@ const StyledSection = styled.div`
   }
 `;
 
-function Gridsection({ subText, header, imageUrl, bgColors, imgFull }) {
+function Gridsection({ subText, header, imageUrl, bgcolors, imgfull }) {
   return (
-    <StyledSection bgColors={bgColors} imgFull={imgFull}>
+    <StyledSection bgcolors={bgcolors} imgfull={imgfull}>
       <p>{subText}</p>
       <h2>{header}</h2>
       <div>
