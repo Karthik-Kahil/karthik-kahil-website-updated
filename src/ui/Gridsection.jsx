@@ -28,7 +28,7 @@ const StyledSection = styled.div`
   }
 
   & h2 {
-    font-family: "AcornRegular", sans-serif;
+    font-family: "AcornBold", sans-serif;
     font-size: 4rem;
     letter-spacing: 0.5rem;
   }

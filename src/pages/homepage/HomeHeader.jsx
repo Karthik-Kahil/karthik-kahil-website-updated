@@ -4,14 +4,8 @@ import SubText from "../../ui/SubText";
 
 const HomeHead = styled.div`
   /* padding-top: ${(props) => props?.padtops && padtops}; */
-  /* padding-top: 20rem; */
+  padding-top: 20rem;
   /* background: var(--baackground--gradient); */
-
-  ${(props) =>
-    props.padtops &&
-    css`
-      padding-top: 20rem;
-    `}
 
   ${(props) =>
     props.color === "gradient" &&
@@ -31,9 +25,9 @@ const HomeHead = styled.div`
   }
 `;
 
-function HomeHeader({ color, header, subText, padtops }) {
+function HomeHeader({ color, header, subText }) {
   return (
-    <HomeHead color={color} padtops={padtops}>
+    <HomeHead color={color}>
       <Header>{!header ? `Hi. I'm Karthik.` : header}</Header>
       <Header>{!header && `A Developer.`}</Header>
       <div>

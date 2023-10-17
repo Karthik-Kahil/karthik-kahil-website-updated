@@ -30,14 +30,14 @@ function Homepage() {
       </GridContainer>
       <GridContainer gridview="right-sm">
         <Gridsection
-          subText={"HELP SCOUT"}
-          header={"AI"}
+          subText={"FIGMA"}
+          header={"Plugins"}
           imageUrl={"https://www.seanhalpin.xyz/work/ai/ai-hero@2x.png"}
           bgcolors={"var(--color-secondary-a2)"}
         />
         <Gridsection
           subText={"HELP SCOUT"}
-          header={"Ariticles"}
+          header={"Mobile"}
           imageUrl={
             "https://www.seanhalpin.xyz/work/mobile/mobile-header_03.png"
           }
@@ -53,6 +53,23 @@ function Homepage() {
           "Work in various states of design and development, from side projects, to in-flight product design and development."
         }
       />
+      <GridContainer gridview="right-sm">
+        <Gridsection
+          subText={"MULTIPLAYER"}
+          header={"Doodler"}
+          imageUrl={"https://www.seanhalpin.xyz/work/ai/ai-hero@2x.png"}
+          bgcolors={"var(--color-grey-0)"}
+        />
+        <Gridsection
+          subText={"MOBILE"}
+          header={"Dark Mode"}
+          imageUrl={
+            "https://www.seanhalpin.xyz/work/hsdm/hsdm-header_02@2x.png"
+          }
+          imgfull={"imgfull"}
+          bgcolors={"var(--color-grey-1)"}
+        />
+      </GridContainer>
     </StyledHome>
   );
 }

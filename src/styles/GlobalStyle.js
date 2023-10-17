@@ -17,6 +17,7 @@ const GlobalStyles = createGlobalStyle`
 
 
   --color-grey-0: #fff;
+  --color-grey-1: #000;
   --color-grey-50: #f9fafb;
   --color-grey-blur: #f9fafbe1;
   --blur--100 : backdrop-filter: blur(1px);
