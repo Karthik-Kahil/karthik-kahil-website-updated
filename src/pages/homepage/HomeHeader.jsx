@@ -3,7 +3,7 @@ import Header from "../../ui/Header";
 import SubText from "../../ui/SubText";
 
 const HomeHead = styled.div`
-  /* padding-top: ${(props) => props?.padtops && padtops}; */
+  /* padding-top: ${(props) => (props?.padding ? "20rem" : "10rem")}; */
   padding-top: 20rem;
   /* background: var(--baackground--gradient); */
 
@@ -25,10 +25,10 @@ const HomeHead = styled.div`
   }
 `;
 
-function HomeHeader({ color, header, subText }) {
+function HomeHeader({ color, header, subText, padding }) {
   return (
-    <HomeHead color={color}>
-      <Header>{!header ? `Hi. I'm Karthik.` : header}</Header>
+    <HomeHead color={color} padding={padding}>
+      <Header icon={"visible"}>{!header ? `Hi. I'm Karthik.` : header}</Header>
       <Header>{!header && `A Developer.`}</Header>
       <div>
         <SubText>

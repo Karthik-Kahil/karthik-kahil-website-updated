@@ -13,7 +13,7 @@ const StyledHome = styled.div`
 function Homepage() {
   return (
     <StyledHome>
-      <HomeHeader color={"gradient"} padtops={"20rem"} />
+      <HomeHeader color={"gradient"} padding={"20rem"} />
       <GridContainer gridview="left-sm">
         <Gridsection
           subText={"HELP SCOUT"}
@@ -46,12 +46,12 @@ function Homepage() {
         />
       </GridContainer>
       <HomeHeader
-        padtops={"10rem"}
         color={"solid"}
         header={"In Progress."}
         subText={
           "Work in various states of design and development, from side projects, to in-flight product design and development."
         }
+        padding={"10rem"}
       />
       <GridContainer gridview="right-sm">
         <Gridsection
@@ -67,6 +67,7 @@ function Homepage() {
             "https://www.seanhalpin.xyz/work/hsdm/hsdm-header_02@2x.png"
           }
           imgfull={"imgfull"}
+          color={"white"}
           bgcolors={"var(--color-grey-1)"}
         />
       </GridContainer>

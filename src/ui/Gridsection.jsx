@@ -9,6 +9,12 @@ const StyledSection = styled.div`
   transition: all 0.5s ease;
   cursor: pointer;
 
+  ${(props) =>
+    props?.color &&
+    css`
+      color: var(--color-grey-0);
+    `}
+
   &:hover {
     img {
       transform: translateY(20px);
@@ -51,9 +57,9 @@ const StyledSection = styled.div`
   }
 `;
 
-function Gridsection({ subText, header, imageUrl, bgcolors, imgfull }) {
+function Gridsection({ subText, header, imageUrl, bgcolors, imgfull, color }) {
   return (
-    <StyledSection bgcolors={bgcolors} imgfull={imgfull}>
+    <StyledSection bgcolors={bgcolors} imgfull={imgfull} color={color}>
       <p>{subText}</p>
       <h2>{header}</h2>
       <div className="imageProduct">

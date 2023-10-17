@@ -13,7 +13,7 @@ const GlobalStyles = createGlobalStyle`
     --color-secondary-a3: #BDDFF9;
 
     --background--gradient: background: rgb(204,223,183);
-    --baackground--gradient: radial-gradient(circle, rgba(204,223,183,1) 22%, rgba(207,223,208,1) 51%, rgba(216,231,196,1) 80%, rgba(231,236,188,1) 89%, rgba(232,235,199,1) 100%);
+    --baackground--gradient: linear-gradient(180deg, rgba(204,223,183,1) 15%, rgba(207,223,208,1) 32%, rgba(216,231,196,1) 53%, rgba(231,236,188,1) 70%, rgba(232,235,199,0) 100%);;
 
 
   --color-grey-0: #fff;
@@ -58,6 +58,12 @@ body {
   line-height: 1.5;
   font-size: 1.6rem;
 }
+
+&::selection {
+  background-color: var(--color-green-a1);
+  color: var(--color-grey-0);
+}
+
 
 input,
 button,
