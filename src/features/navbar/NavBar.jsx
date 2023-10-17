@@ -14,8 +14,9 @@ const Nav = styled.nav`
 const Div = styled.div`
   margin: 1rem 0.9rem;
   border-radius: 50px;
-  background-color: var(--color-grey-blur);
-  backdrop-filter: var(--blur--100);
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
 `;
 
 const StyledUl = styled.ul`
@@ -62,7 +63,7 @@ const StyledUl = styled.ul`
     height: 100%;
     top: 0px;
     z-index: 1;
-    background: var(--color-secondary-a0);
+    background: var(--color-grey-0);
     border-radius: 50px;
     transition: all 0.4s ease 0s;
 

@@ -32,6 +32,8 @@ const GlobalStyles = createGlobalStyle`
   --color-grey-800: #1f2937;
   --color-grey-900: #111827;
 
+  
+
 }
 
 *,
