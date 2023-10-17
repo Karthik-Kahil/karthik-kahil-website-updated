@@ -3,20 +3,21 @@ import styled from "styled-components";
 
 const Styledfooter = styled.footer`
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  max-width: 600px;
+  grid-template-columns: 200px 1fr;
+  max-width: 1000px;
   margin: 0 auto;
   font-family: "Poppins", sans-serif;
+  margin-top: 20rem;
+  margin-bottom: 10rem;
 
   & li,
   a {
     font-size: 1.5rem;
     padding: 1rem 0;
-    /* line-height: 4rem; */
   }
 
   & h4 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 600;
     padding-bottom: 1.5rem;
   }
