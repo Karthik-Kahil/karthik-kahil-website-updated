@@ -1,7 +1,6 @@
 import styled, { css } from "styled-components";
 
 const GridContainer = styled.div`
-  display: grid;
   ${(props) =>
     props.gridview === "left-sm" &&
     css`
@@ -13,7 +12,8 @@ const GridContainer = styled.div`
     css`
       grid-template-columns: 1fr 0.6fr;
     `}
-    
+
+  display: grid;
   grid-template-rows: 50rem;
   grid-gap: 5rem;
   padding: 10rem 2% 0 2%;

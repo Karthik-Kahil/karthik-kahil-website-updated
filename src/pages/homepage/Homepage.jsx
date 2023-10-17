@@ -13,7 +13,7 @@ const StyledHome = styled.div`
 function Homepage() {
   return (
     <StyledHome>
-      <HomeHeader color={"gradient"} padtop={"20rem"} />
+      <HomeHeader color={"gradient"} padtops={"20rem"} />
       <GridContainer gridview="left-sm">
         <Gridsection
           subText={"HELP SCOUT"}
@@ -46,7 +46,7 @@ function Homepage() {
         />
       </GridContainer>
       <HomeHeader
-        padtop={"10rem"}
+        padtops={"10rem"}
         color={"solid"}
         header={"In Progress."}
         subText={

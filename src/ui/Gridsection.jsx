@@ -56,7 +56,7 @@ function Gridsection({ subText, header, imageUrl, bgcolors, imgfull }) {
     <StyledSection bgcolors={bgcolors} imgfull={imgfull}>
       <p>{subText}</p>
       <h2>{header}</h2>
-      <div>
+      <div className="imageProduct">
         <img src={imageUrl} alt={subText} />
       </div>
     </StyledSection>
