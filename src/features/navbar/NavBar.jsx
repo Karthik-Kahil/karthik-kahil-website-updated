@@ -120,6 +120,7 @@ function NavBar() {
   const [active, setActive] = useState([]);
 
   const onClickHandler = (links) => {
+    console.log(typeof links);
     setActive((el) => links);
   };
 
