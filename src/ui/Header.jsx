@@ -8,7 +8,7 @@ const Header = styled.h2`
   text-align: center;
   position: relative;
 
-  ${(props) =>
+  /* ${(props) =>
     props.icon === "visible" &&
     css`
       &::before {
@@ -20,7 +20,7 @@ const Header = styled.h2`
         position: absolute;
         transform: rotate(-20deg) scale(0.08);
       }
-    `}
+    `} */
 `;
 
 export default Header;

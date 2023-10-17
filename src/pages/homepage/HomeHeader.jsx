@@ -28,7 +28,7 @@ const HomeHead = styled.div`
 function HomeHeader({ color, header, subText, padding }) {
   return (
     <HomeHead color={color} padding={padding}>
-      <Header icon={"visible"}>{!header ? `Hi. I'm Karthik.` : header}</Header>
+      <Header>{!header ? `Hi. I'm Karthik.` : header}</Header>
       <Header>{!header && `A Developer.`}</Header>
       <div>
         <SubText>
