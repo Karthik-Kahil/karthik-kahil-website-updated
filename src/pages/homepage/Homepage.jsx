@@ -2,9 +2,6 @@ import styled from "styled-components";
 import HomeHeader from "./HomeHeader";
 import GridContainer from "../../ui/GridContainer";
 import Gridsection from "../../ui/Gridsection";
-import Transition from "../../ui/Transition";
-import gsap from "gsap";
-import { useEffect, useRef } from "react";
 
 const StyledHome = styled.div`
   /* & div {
@@ -14,37 +11,10 @@ const StyledHome = styled.div`
 `;
 
 function Homepage() {
-  const home = gsap.timeline();
-  const homeh1 = useRef(null);
-  const homeimg = useRef(null);
-
-  useEffect(() => {
-    home.from(
-      homeh1.current,
-      {
-        duration: 0.6,
-        y: -100,
-        opacity: 0,
-      },
-      "-=3.5"
-    );
-    home.from(
-      homeimg.current,
-      {
-        duration: 0.5,
-        y: -200,
-        opacity: 0,
-      },
-      "-=3"
-    );
-  }),
-    [];
-
   return (
     <StyledHome>
-      <Transition timeline={home} />
       <HomeHeader color={"gradient"} padding={"20rem"} />
-      <GridContainer gridview="left-sm" ref={homeh1}>
+      <GridContainer gridview="left-sm">
         <Gridsection
           subText={"HELP SCOUT"}
           header={"AI"}
@@ -58,7 +28,7 @@ function Homepage() {
           bgcolors={"var(--color-secondary-a1)"}
         />
       </GridContainer>
-      <GridContainer gridview="right-sm" ref={homeh1}>
+      <GridContainer gridview="right-sm">
         <Gridsection
           subText={"FIGMA"}
           header={"Plugins"}
