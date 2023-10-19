@@ -2,6 +2,8 @@ import styled from "styled-components";
 import HomeHeader from "./HomeHeader";
 import GridContainer from "../../ui/GridContainer";
 import Gridsection from "../../ui/Gridsection";
+import { useLayoutEffect, useRef } from "react";
+import gsap from "gsap";
 
 const StyledHome = styled.div`
   /* & div {
@@ -11,10 +13,21 @@ const StyledHome = styled.div`
 `;
 
 function Homepage() {
+  const root = useRef();
+
+  useLayoutEffect(() => {
+    let ctx = gsap.context(() => {
+      // all your animations go in here...
+      gsap.from(".box", { y: -80 });
+    }, root); // <- scopes all selector text to the root element
+
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <StyledHome>
+    <StyledHome ref={root}>
       <HomeHeader color={"gradient"} padding={"20rem"} />
-      <GridContainer gridview="left-sm">
+      <GridContainer gridview="left-sm" className="box">
         <Gridsection
           subText={"HELP SCOUT"}
           header={"AI"}
@@ -28,7 +41,7 @@ function Homepage() {
           bgcolors={"var(--color-secondary-a1)"}
         />
       </GridContainer>
-      <GridContainer gridview="right-sm">
+      <GridContainer gridview="right-sm" className="box">
         <Gridsection
           subText={"FIGMA"}
           header={"Plugins"}
