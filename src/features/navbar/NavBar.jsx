@@ -117,7 +117,9 @@ function NavBar() {
 
   useEffect(() => {
     navLinks.map((links) => pathname === links.to && setActive((el) => links));
-  }, []);
+
+    document.title = `Karthik Kahil • ${active.name ? active.name : "404"}`;
+  }, [active]);
 
   const onClickHandler = (links) => {
     setActive((el) => links);
