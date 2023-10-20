@@ -51,14 +51,14 @@ function Aboutpage() {
       </div>
       <GridTwo>
         <div>
-          <img src="../../public/karthik-kahil-faces.jpg" alt="" />
+          <img src="../../public/karthik-kahil-faces.webp" alt="" />
           <div>
             <h2>Karthik Kahil</h2>
           </div>
         </div>
         <div className="right-grid">
           <h2>
-            I'm a Front-end Developer working remotely from 17°C Chennai, India.
+            I'm a Front-end Developer working remotely from 23°C Chennai, India.
           </h2>
           <p>
             Over the past 12+ years, I've worked in various areas of digital
