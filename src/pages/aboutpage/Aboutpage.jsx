@@ -3,15 +3,16 @@ import HomeHeader from "../homepage/HomeHeader";
 
 const GridTwo = styled.div`
   display: grid;
-  grid-template-columns: 300px 1fr;
+  grid-template-columns: 400px 1fr;
   max-width: 1200px;
+  padding: 0 2%;
   margin: 0 auto;
   grid-gap: 8rem;
 
   & div img {
     width: 100%;
     height: 100%;
-    max-width: 500px;
+    max-width: 400px;
     max-height: 400px;
     border-radius: 50rem 50rem 0px 0px;
   }
@@ -57,7 +58,7 @@ function Aboutpage() {
         </div>
         <div className="right-grid">
           <h2>
-            I'm a Product Designer working remotely from 17°C Dublin, Ireland.
+            I'm a Front-end Developer working remotely from 17°C Chennai, India.
           </h2>
           <p>
             Over the past 12+ years, I've worked in various areas of digital
