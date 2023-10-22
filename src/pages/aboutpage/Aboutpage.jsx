@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import HomeHeader from "../homepage/HomeHeader";
+import HeaderSub from "./HeaderSub";
 
 const GridTwo = styled.div`
   display: grid;
@@ -18,23 +19,11 @@ const GridTwo = styled.div`
   }
 
   & div > div {
+    font-size: 1.5rem;
     background-color: var(--color-green-a1);
     color: var(--color-grey-0);
     padding: 1.5rem;
     margin-top: -10px;
-  }
-
-  & .right-grid > h2 {
-    font-family: "AcornRegular", sans-serif;
-    font-size: 5rem;
-    line-height: 6rem;
-  }
-
-  & p {
-    font-family: "Poppins", sans-serif;
-    font-size: 2rem;
-    line-height: 3rem;
-    margin-top: 2rem;
   }
 `;
 
@@ -56,16 +45,7 @@ function Aboutpage() {
             <h2>Karthik Kahil</h2>
           </div>
         </div>
-        <div className="right-grid">
-          <h2>
-            I'm a Front-end Developer working remotely from 23°C Chennai, India.
-          </h2>
-          <p>
-            Over the past 12+ years, I've worked in various areas of digital
-            design, including front-end development, email, marketing, and app
-            UI/UX. I'm proud to have worn many hats.
-          </p>
-        </div>
+        <HeaderSub />
       </GridTwo>
     </>
   );
