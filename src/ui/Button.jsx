@@ -1,10 +1,16 @@
 import styled from "styled-components";
 
 const Button = styled.button`
-  padding: 3rem 3rem;
-  background-color: var(--color-secondary-a1);
-  font-size: 10rem;
+  font-size: 1.5rem;
   text-align: center;
+  border: 0;
+
+  & a {
+    padding: 1.5rem 3rem;
+    background-color: var(--color-green-a1);
+    border-radius: 10px;
+    color: var(--color-grey-0);
+  }
 `;
 
 export default Button;
